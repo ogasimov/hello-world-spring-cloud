@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: HelloWorld
+server:
+  port: 8081
+
+eureka:
+  client:
+    fetchRegistry: true
+    registerWithEureka: true
+    serviceUrl:
+      defaultZone: http://localhost:8701/eureka

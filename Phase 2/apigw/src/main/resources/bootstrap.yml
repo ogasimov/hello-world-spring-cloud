@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: ApiGw
+server:
+  port: 8080
+
+eureka:
+  client:
+    fetchRegistry: true
+    registerWithEureka: false
+    serviceUrl:
+      defaultZone: http://localhost:8701/eureka
+
+zuul:
+  ignored-services: '*'
+  routes:
+    hello-world:
+      path: '/hello-world/**'
+      strip-prefix: false
+      service-id: 'HelloWorld'
+    hello:
+      path: '/hello/**'
+      strip-prefix: false
+      service-id: 'Hello'

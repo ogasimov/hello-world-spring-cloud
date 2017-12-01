@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: HelloDecorator
+  cloud:
+    stream:
+      bindings:
+        input:
+          destination: hello
+        output:
+          destination: mood
+server:
+  port: 8085

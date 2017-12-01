@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: HelloDecorator
+  cloud:
+    stream:
+      bindings:
+        input:
+          destination: mood
+server:
+  port: 8086
+
+eureka:
+  client:
+    fetchRegistry: true
+    registerWithEureka: false
+    serviceUrl:
+      defaultZone: http://localhost:8701/eureka

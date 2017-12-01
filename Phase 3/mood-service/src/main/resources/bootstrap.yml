@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: Mood
+server:
+  port: 8083
+
+eureka:
+  client:
+    fetchRegistry: true
+    registerWithEureka: true
+    serviceUrl:
+      defaultZone: http://localhost:8701/eureka

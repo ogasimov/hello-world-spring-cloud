@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: MoodService
+server:
+  port: 8089

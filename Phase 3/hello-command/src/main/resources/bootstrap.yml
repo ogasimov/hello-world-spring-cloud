@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: HelloCommand
+  cloud:
+    stream:
+      bindings:
+        output:
+          destination: hello
+server:
+  port: 8084
+
+eureka:
+  client:
+    fetchRegistry: true
+    registerWithEureka: true
+    serviceUrl:
+      defaultZone: http://localhost:8701/eureka
